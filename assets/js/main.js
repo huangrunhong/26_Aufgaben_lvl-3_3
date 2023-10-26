@@ -13,7 +13,7 @@ const gesamtumsatzKJ = document.body.querySelector("#gesamtumsatzKJ");
 const actionSelect = document.body.querySelector("#actionSelect");
 
 const kalorienRechner = () => {
-  if (woman.checked === true && man.checked === false) {
+  if (woman.checked) {
     const grundumsatz =
       65.51 +
       9.6 * weightInput.value +
@@ -24,7 +24,7 @@ const kalorienRechner = () => {
     grundumsatzKJ.textContent = (grundumsatz * 4.184).toFixed(2);
     gesamtumsatzKcal.textContent = gesamtumsatz.toFixed(2);
     gesamtumsatzKJ.textContent = (gesamtumsatz * 4.184).toFixed(2);
-  } else if (woman.checked === false && man.checked === true) {
+  } else if (man.checked) {
     const grundumsatz =
       66.47 +
       13.7 * weightInput.value +
