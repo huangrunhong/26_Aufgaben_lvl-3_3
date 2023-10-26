@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  font-family: Arial;
+}
+section {
+  margin: 10% auto;
+  background-color: rgb(212, 212, 212);
+  width: 300px;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+form > input,
+form > select {
+  padding-block: 0.25rem;
+  border: 1px solid blueviolet;
+  border-radius: 0.25rem;
+}
+form > div {
+  display: flex;
+  gap: 0.25rem;
+}
+.button {
+  padding-block: 0.5rem;
+  background-color: blueviolet;
+  color: white;
+}
+
+table {
+  width: 100%;
+  margin-top: 0.5rem;
+  color: aliceblue;
+  border-collapse: separate;
+  border: 0px solid white;
+  border-spacing: 0;
+  border-radius: 10px;
+  text-align: left;
+}
+thead {
+  background-color: blueviolet;
+}
+
+tbody {
+  background-color: rgb(189, 130, 245);
+}
+th {
+  padding-block: 0.25rem;
+  padding-left: 0.25rem;
+}
